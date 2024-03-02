@@ -1,0 +1,176 @@
+.menu_list{
+	
+	opacity: 0;
+	transition: 0.5s;
+}
+.is-active{
+	opacity: 1;
+}
+.nav{
+	display:flex ;
+    justify-content: space-between;
+	align-items: center;
+
+}
+.logo{
+	font-size: 50px;
+	color: #b85151;
+
+}
+.nav__list{
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	width: 50%;
+
+}
+.nav__link{
+	text-decoration: none;
+	font-size: 25px;
+	color: purple;
+}
+.footer{
+	border-top: 3px	solid black;
+	color: pink;
+	padding: 0%;
+}
+.footer__text{
+	font-size:25px;
+	color: black;
+	margin: 0;
+	text-align: center ;
+
+}
+.header{
+	background-color:rgb(255, 255, 255);
+}
+.theme__title{
+	margin: 0px;
+	font-size: 25px;
+	color: purple;
+}
+.theme__list{
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.theme__light{
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background-color: rgb(204, 204, 204);
+}
+.theme__dark{
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background-color: black;
+}
+
+.burger__line{
+	width: 30px;
+	height: 6px;
+	background-color: green;
+	margin-bottom: 5px;
+	transition: all 0.3s ease;
+	
+
+}
+.burger{
+	display: none;
+}
+@keyframes navLinkAnim {	
+	from{
+		opacity: 0;
+		transform: translateX(10%)
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+@media screen and (max-width:1000px){
+	body{
+		overflow-x: hidden;
+	}
+	.nav__list{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: rgb(235, 232, 232);
+		row-gap: 15px;
+		justify-content: center;
+		padding: 20px 0;
+		width: 220px;
+		position: absolute;
+		right: 0;
+		top: 250px;
+		z-index: 2;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+	.nav__list_active{
+		transform: translateX(0%);
+	}
+	.burger{
+		display: block;
+	}
+	.container{
+		max-width: 600px;
+	}
+.active .burger__line1{
+ transform: rotate(-45deg) translate(-9px, 7px)
+}
+.active .burger__line2{
+ opacity: 0;
+}
+.active .burger__line3{
+	transform: rotate(45deg) translate(-8px, -7px)}
+	.nav__item{
+		opacity: 0;
+	}
+}
+
+.clock{
+	background-color: aquamarine;
+	padding: 10px 0;
+}
+.time{
+	font-size: 40px;
+	text-align: center;
+	color: black;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+#myVideo{
+	width: 100%;	
+}
+.video__content{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5) ;
+	color:white;
+}
+.video{
+	position: relative;
+
+}
+.video__btn{
+width: 200px;	
+background-color: black;
+color: white;
+padding: 10px;
+border: none;
+cursor: pointer;
+transition: .3s ease-in;
+
+}
+.video__btn:hover{
+	background-color: white;
+	color: black;
+}
